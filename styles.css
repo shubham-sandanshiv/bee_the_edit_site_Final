@@ -793,7 +793,7 @@ color: #FFB84D;
 .site-footer{background:var(--black);color:white;padding:24px 0; margin-top:0px; padding: 80px 10px; padding-bottom:60px;}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .footer-links{display:flex;gap:14px; flex-direction: column;}
-.footer-links a{color:rgba(255,255,255,0.8);text-decoration:none}
+.footer-links a{color:rgba(255,255,255,0.8);text-decoration:none; margin-top: 0px;}
 
 .so-icons {
     display: flex;
@@ -1030,6 +1030,10 @@ a.GAQ:hover {border: 2px solid #ffb800;
     box-shadow: var(--shadow);
     border: #ffc600 solid 2px;
 }
+.modalV{
+  width: 80% !important;
+  height: auto;
+}
 a.GAQ
  {border: 2px solid #ffb800;
     color: #ffffff !important;
@@ -1044,7 +1048,32 @@ a.GAQ
     align-content: center;
     align-items: center;
 }
-.footer-links{display:flex;gap:5px; flex-direction: column;}
+a.GAQ-f
+ {border: 2px solid #ffb800;
+    color: #ffffff;
+    background-color: #ffb800;
+    padding: 5px 10px;
+      text-decoration: none;
+    display: flex;
+    border-radius: 10px;
+    width: 45%;
+    margin: 20px 0px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+a.GAQ-f:hover {border: 2px solid #ffb800;
+    color: #ffb800;
+    background-color: rgba(255, 255, 255, 0.001);
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 45%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.footer-links{display:flex;gap:5px; flex-direction: column; margin-top: 20px;}
 .badge-text {
     color: #ffffff;
     font-size: 14px;
@@ -1052,8 +1081,50 @@ a.GAQ
     padding: 05px 20px;
     margin-bottom: 0px;
 }
+.F-C-C {
+    background-color: #000000;
+    width: 100%;
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    color: #EDEDF3;
+    border-top: 1px solid rgb(86, 86, 86);
+    border-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.col-lg-6.F-credit-L {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+.col-lg-6.F-credit-R {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    padding-top: 20px;
+}
 .col-f-1{
   margin-right: 0px;
 }
+.logo-f{
+  width: 40%;
+}
+#fab-wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none; /* initially non-interactive until visible */
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+.site-footer{background:var(--black);color:white;padding:24px 0; margin-top:0px; padding: 40px 10px; padding-bottom:60px;}
 }
 
