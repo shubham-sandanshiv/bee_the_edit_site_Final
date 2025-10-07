@@ -936,7 +936,10 @@ a.GAQ:hover {border: 2px solid #ffb800;
   color: #23232B !important;
   border-color: #23232B !important;
 }
-
+.col-lg-4.F-credit-L {
+    display: flex;
+    justify-content: center;
+}
 
 /* Responsive */
 @media (max-width:900px){
