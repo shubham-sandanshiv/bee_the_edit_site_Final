@@ -777,8 +777,27 @@ color: #FFB84D;
 .thumb:hover{background:var(--yellow);color:var(--black);transform:translateY(-6px)}
 
 /* Contact */
-.contact{background:var(--yellow);color:var(--black); padding: 180px 0px;}
-.contact-box{padding:20px;border-radius:14px;text-align:center}
+.contact {
+  background: var(--yellow) url("assets/Con-bg.jpg") no-repeat center center;
+  background-size: cover;
+  color: var(--black);
+  padding: 180px 0px;
+}
+
+/* Contact box style */
+.contact-box {
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .contact {
+    background-position: right center;
+  }
+}
+
 .btn{display:inline-block;text-decoration:none;padding:10px 16px;border-radius:12px;font-weight:700}
 .btn.primary{background:var(--yellow);color:var(--black)}
 .btn.outline {
@@ -900,13 +919,13 @@ a.GAQ:hover {border: 2px solid #ffb800;
     align-items: center;
     justify-content: center;
 }
-.col-lg-6.F-credit-L {
+.col-lg-4.F-credit-L {
     display: flex;
     justify-content: flex-end;
     padding: 10px 0px;
     padding-right: 60px;
 }
-.col-lg-6.F-credit-R {
+.col-lg-4.F-credit-R {
     display: flex;
     justify-content: flex-start;
     padding: 0px 0px;
@@ -1092,14 +1111,14 @@ a.GAQ-f:hover {border: 2px solid #ffb800;
     display: flex;
     justify-content: center;
 }
-.col-lg-6.F-credit-L {
+.col-lg-4.F-credit-L {
     display: flex;
     justify-content: center;
     padding: 10px 0px;
     padding-right: 0px;
     padding-top: 0px;
 }
-.col-lg-6.F-credit-R {
+.col-lg-4.F-credit-R {
     display: flex;
     justify-content: center;
     padding: 0px 0px;
